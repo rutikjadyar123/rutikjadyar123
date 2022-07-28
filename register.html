@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{
+        background-image: url(/homepage/homeimg/why-kei-8e2gal_GIE8-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+      }
+      #register{
+        width: 400px;
+        position: relative;
+        left: 500px;
+        border: 2px solid black;
+        top: 60px;
+        padding-left: 10px;
+        
+      }
+      #btn1{
+        width: 270px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        padding: 5px;
+        background-color:  rgb(25, 225, 25);
+        color: white;
+      
+      }
+    </style>
+    
+</head>
+<body>
+  <br>
+  <div id="register" style="background-color: rgba(255, 255, 255, 0.8)">
+    <h1 style="text-align:center ;">Register</h1>
+    <hr style="border: 2px solid red;">
+    <form onsubmit="return submitted()">
+        <table>
+            <tr>
+                <td><label for="name"  id="namel"> Name: </label></td>
+                <td><input type="text" id="name" name="name" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="surname" id="surnamel">Surname:</label></td>
+                <td><input type="text" id="surname" name="surname" maxlength="10" ></td>
+            </tr>
+            <tr>
+                <td><label for="age" class="agel"> Age:</label></td>
+                <td><input type="number" id="age" name="age" min="5" value="" required> </td>
+            </tr>
+            <tr>
+                <td><label for="email" class="emaill"> Email :</label></td>
+                <td> <input type="email" id="email" name="email"></td>   
+            </tr>
+            <tr>
+                <td> <LABEL for="genderl" > Gender: </LABEL> </td>
+                <td>
+                    <select name="gender">
+                        <option value="male"> Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                </td>
+                <tr>
+                    <td>
+                         Upload Image
+                    </td>
+                    <td><input type="file" multiple name="file" accept=".jpg" ></td>
+                </tr>   
+            </tr>
+            <tr>
+              <td>Date Of Birth:</td>
+              <td><input type="date"></td>
+            </tr>
+        </table>
+        <button id="btn1"> <b>Register</b> </button>
+    </form>
+  <div>
+      
+<script>
+  function submitted(){
+    value = true;
+    var a = alert('Register Done');
+    return value;
+  }
+</script>
+</body>
+</html>

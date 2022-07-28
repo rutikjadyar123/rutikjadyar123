@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="login.css" rel="stylesheet" type="text/css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <form action="index.html" method="post" onsubmit="return validate()">
+        <div id="home2">
+            <div id="home2-row1">
+                <div><b>Login</b></div>
+            </div>
+            <div id="home2-row2">
+                <span id="col1"><img src="/loginpage/loginimg/user1.png" style="width: 20px;"></span>
+                <span id="col2"><input type="text" id="username" style="width:;" placeholder="Username" name="username" ></span>
+                <span  id="error1"></span>
+            </div>
+            <div id="home2-row3">
+                <span id="col1"><img src="/loginpage/loginimg/lock.png" style="width: 20px;"></span>
+                <span id="col2"><input type="password" id="password" style="width:;" placeholder="Password" name="password" ></span>
+                <span  id="error2"></span>
+            </div>
+            <div id="home2-row4">
+                    <span id="col1"><a href="">Forget Password?</a></span>
+                    <div><button id="btn1">Login</button><button id="btn2">Register</button></div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
